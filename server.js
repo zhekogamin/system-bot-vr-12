@@ -30,7 +30,7 @@ client.login("");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("ONLINE");
-  client.user.setActivity(`${prefix}help`, { type: "WATCHING" });
+  client.user.setActivity(`${prefix}help ZHEKO UP`, { type: "WATCHING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
